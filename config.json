@@ -1,0 +1,37 @@
+{
+  "options": {
+    "paths": {
+      "root": "",
+      "fonts": "/data/fonts",
+      "styles": "/data/styles",
+      "mbtiles": "/data"
+    }
+  },
+  "styles": {
+    "test-style": {
+      "style": "osm-bright/style.json",
+      "tilejson": {
+        "type": "overlay",
+        "bounds": [9.613465, 53.38581, 10.33637, 53.7465]
+      }
+    },
+    "maptiler-basic": {
+      "style": "maptiler-basic/style.json",
+      "tilejson": {
+        "type": "overlay",
+        "bounds": [9.613465, 53.38581, 10.33637, 53.7465]
+      }
+    },
+    "osm-liberty": {
+      "style": "osm-liberty.json",
+      "tilejson": {
+        "bounds": [9.613465, 53.38581, 10.33637, 53.7465]
+      }
+    }
+  },
+  "data": {
+    "openmaptiles": {
+      "mbtiles": "/data/tiles.mbtiles"
+    }
+  }
+}
