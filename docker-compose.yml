@@ -3,12 +3,14 @@ services:
     image: maptiler/tileserver-gl:latest
     container_name: trufi-tileserver-gl
     ports:
-      - "5656:5656"
+      - "5656:8080"
     volumes:
       - ./data:/data
-    command: tileserver-gl -p 5656 
+    command: tileserver-gl -p 8080 
     restart: unless-stopped
+    networks:
+      - trufi-server
 
 networks:
-  default:
+  trufi-server:
     name: trufi-server
